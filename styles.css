@@ -1,0 +1,27 @@
+header{
+	background-color: #8d22c7;
+	padding: 0px;
+}
+
+header h1{
+	font-size: 4em;
+	color: #eef0e1;
+	padding: 10px 10px 0px 10px;
+}
+
+header h2{
+	font-size: 2em;
+	color: #eef0e1;
+	padding: 0px 0px 10px 40px;
+}
+
+footer{
+	background-color: #8d22c7;
+	color: #eef0e1;
+	padding: 0px;
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	bottom:0;
+	width:100%;
+}

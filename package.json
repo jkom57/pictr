@@ -1,0 +1,14 @@
+{
+  "name": "pictr",
+  "version": "1.0.0",
+  "description": "Visualisateur d'albums photos",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kim Lavoie",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
