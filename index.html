@@ -14,8 +14,10 @@
   <meta property="og:description" content="Visualisateur d'albums photos">
 
   <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
 
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -23,16 +25,23 @@
 		<h1>Pictr</h1>
 		<h2>Visualisateur d'albums photos</h2>
 	</header>
+
+	<!-- <button class="albums">Test</button> -->
 	
 	<div id="content">
 		<!-- Liste des albums -->
-		<select name="albums">
-			<option value="album1">Album #1</option>
-			<option value="album2">Album #2</option>
-			<option value="album3">Album #3</option>
+		<select name="albums" class="albums">
+			<!-- <span></span>-->
+			<option value="album1" class="albumName">Choisir une option</option>
+			<!-- <option value="album2">Album #2</option>
+			<option value="album3">Album #3</option>-->
 		</select>
 		
 		<!-- Afficher les photos ici -->
+	</div>
+
+	<div class="grille">
+		
 	</div>
 	
 	<footer>
@@ -40,6 +49,7 @@
 		<p>© Tous droits réservés - 2022</p>
 	</footer>
 
+	<script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 	<script src="main.js"></script>
 </body>
 </html>
