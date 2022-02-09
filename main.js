@@ -10,7 +10,7 @@ $.get(urlAlbums, function (data, status) {
 })
 
 $(".albums").on("click", function () {
-    var id = $(".albums").val()
+    let id = $(".albums").val()
     $.get(urlAlbumsId + id, function (data, status) {
         $.each(data, function (obj, item) {
             console.log(item.thumbnailUrl);
