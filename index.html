@@ -20,34 +20,47 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
-<body class="">
-	<header class="">
+<body class="bg-light bg-gradient">
+	<header class="bg-danger bg-gradient">
 		<h1>Pictr</h1>
 		<h2>Visualisateur d'albums photos</h2>
 	</header>
 	
 	<div id="content" class="">
 		<!-- Liste des albums -->
-		<select name="albums" id="albums">
+		<select name="albums" id="albums" class="form-select form-select-lg mb-3">
 			<option value="album1" id="albumName">Choisir une option</option>
 		</select>
 		
 		<!-- Afficher les photos ici -->
-		<div class="mt-2 container w-100">
-			<div class="row row-cols-lg-5 row-cols-md-3 row-cols-sm-1">
-				<div id="grille">
+		<div class="mt-2 container">
+			<div id="grille" class="row row-cols-lg-6 row-cols-md-4 row-cols-sm-1">
+			</div>
+		</div>
 
+		<div class="modal" id="modalToShow">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="imageModal"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<footer class="fixed-bottom">
+	<footer class="fixed-bottom bg-danger bg-gradient">
 		<p>Pictr.inc</p>
 		<p>© Tous droits réservés - 2022</p>
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 	<script src="main.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
